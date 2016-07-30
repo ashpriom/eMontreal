@@ -8,8 +8,6 @@ router.use(function (req,res,next) {
   next();
 });
 
-app.use('/static', express.static(__dirname + '/public'));
-
 router.get("/",function(req,res){
   res.sendFile(path + "index.html");
 });
@@ -22,7 +20,9 @@ router.get("/contact",function(req,res){
   res.sendFile(path + "contact.html");
 });
 
-app.use("/",router);
+app.use(express.static(__dirname + 'public'));
+
+app.use(router);
 
 app.use("*",function(req,res){
   res.sendFile(path + "404.html");
