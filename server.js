@@ -3,15 +3,13 @@ var app = express();
 var router = express.Router();
 var path = __dirname + '/views/';
 
-// serve all asset files from necessary directories
-    app.use("/js", express.static(__dirname + "/assets/js"));
-    app.use("/img", express.static(__dirname + "/assets/img"));
-    app.use("/css", express.static(__dirname + "/assets/css"));
-
 router.use(function (req,res,next) {
   console.log("/" + req.method);
   next();
 });
+
+app.use(express.static('assets'));
+app.use(express.static('assets/css'));
 
 router.get("/",function(req,res){
   res.sendFile(path + "index.html");
