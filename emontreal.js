@@ -20,7 +20,7 @@ router.get("/contact",function(req,res){
   res.sendFile(path + "contact.html");
 });
 
-app.use(express.static(__dirname + 'public'));
+app.use(express.static(__dirname + '/public'));
 
 app.use(router);
 
