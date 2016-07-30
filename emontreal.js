@@ -8,8 +8,7 @@ router.use(function (req,res,next) {
   next();
 });
 
-app.use(express.static('assets'));
-app.use(express.static('assets/css'));
+app.use('/static', express.static(__dirname + '/public'));
 
 router.get("/",function(req,res){
   res.sendFile(path + "index.html");
@@ -29,10 +28,6 @@ app.use("*",function(req,res){
   res.sendFile(path + "404.html");
 });
 
-//app.listen(8080,function(){
-//  console.log("Live at Port 8080");
-//});
-
-app.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT || 3000, function(){ // run on localhost:3000 or Heroku dynamic port
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
