@@ -13,7 +13,7 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family:'Source Sans Pro',Helvetica,Arial,sans-serif;
 }
 
 .text-vertical-center {
@@ -176,14 +176,16 @@ hr.small {
 .about {
     padding: 25px 0;
     background: black;
-    background: url(../images/callout.jpg) no-repeat center center scroll;
+    background: url(../images/subtle_carbon.png) repeat center center scroll;
     color: snow;
+    border-top: 0.2px dotted #444;
 }
 
 /* Services */
 
 .services {
     padding: 50px 0;
+    background: url(../images/inflicted.png) repeat center center scroll;
 }
 
 .service-item {
@@ -226,6 +228,8 @@ hr.small {
 
 .call-to-action {
     padding: 50px 0;
+    background: url(../images/squairy_light.png) repeat center center scroll;
+    color: #444;
 }
 
 .call-to-action .btn {
