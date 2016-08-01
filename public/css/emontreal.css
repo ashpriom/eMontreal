@@ -188,7 +188,7 @@ hr.small {
     background: url(../images/inflicted.png) repeat center center scroll;
     -moz-box-shadow: inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow: inset 0px 10px 50px #000000;
+    box-shadow: inset 0px 10px 10px 1px #000;
 }
 
 .service-item {
@@ -258,7 +258,8 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 100px 0 70px 0;
+    background: url(../images/squairy_light.png) repeat center center scroll;
 }
 
 #to-top {
