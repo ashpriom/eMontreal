@@ -176,7 +176,7 @@ hr.small {
 .about {
     padding: 25px 0;
     background: black;
-    background: url(../images/subtle_carbon.png) repeat center center scroll;
+    background: url(../images/binding_dark.png) repeat center center scroll;
     color: snow;
     border-top: 0.2px dotted #444;
 }
@@ -188,7 +188,7 @@ hr.small {
     background: url(../images/inflicted.png) repeat center center scroll;
     -moz-box-shadow: inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow: inset 0px 10px 10px 1px #000;
+    box-shadow: inset 0 0px 20px #000;
 }
 
 .service-item {
