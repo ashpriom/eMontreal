@@ -1,6 +1,6 @@
-var express = require("express");
-var app = express();
-var router = express.Router();
+var express = require("express"); // require module
+var app = express(); // init express app
+var router = express.Router(); // init express router
 var path = __dirname + '/views/';
 
 router.use(function (req,res,next) {
